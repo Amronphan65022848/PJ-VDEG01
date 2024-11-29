@@ -1,0 +1,74 @@
+
+.container{
+    max-width: 100%;
+    margin: 0 auto;
+    border: 1px solid chartreuse;
+    padding: 20px;
+}
+nav{
+    /* position: fixed; */
+    width: 100%;
+    background: linear-gradient(to bottom, #2FC000 ,#238F00);
+}
+.body{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 40px;
+    
+}
+.Menu{
+    display: flex;
+    /* background-color: aliceblue; */
+    justify-content: space-between;
+    width: 50%;
+
+}
+.Menu li{
+    /* display: grid; */
+    list-style: none;
+    display: flex;
+    gap: 30px;
+    width: 200px;
+    justify-content: center ;
+    
+
+}
+
+a{
+    color: white;
+    text-decoration: none  ;
+}
+
+.profileimg{
+    width: 60px;
+    height: 60px;
+}
+
+/* สไตล์พื้นฐานสำหรับ Navbar */
+.Menu li a {
+    color: white;
+    text-decoration: none;
+    position: relative;
+    font-size: 16px;
+    padding: 5px 10px;
+    transition: all 0.3s ease-in-out;
+  }
+  
+  /* สไตล์สำหรับลิงก์ที่ active */
+  .Menu li a.active-link {
+   
+    font-weight: bold;
+  }
+  
+  /* เส้นใต้ */
+  .Menu li a.active-link::after {
+    content: '';
+    display: block;
+    height: 2px;
+    background-color: #f9f9f9;
+    margin: auto;
+    margin-top: 5px;
+    width: 100%; /* ความยาวของเส้น */
+  }
+  

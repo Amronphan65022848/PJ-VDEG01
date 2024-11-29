@@ -1,0 +1,26 @@
+<nav>
+    <div class="container">
+      <div class="body">
+        <div class="data1">
+          <img src="../../assets/imgs/navbar/logo.png" alt="">
+        </div>
+        <ul class="Menu">
+          <li>
+            <a routerLink="/home" routerLinkActive="active-link">Home</a>
+          </li>
+          <li>
+            <a routerLink="/activity" routerLinkActive="active-link">Activities</a>
+          </li>
+          <li *ngIf="isAdmin">
+            <a routerLink="/admin-list" routerLinkActive="active-link">Admin</a>
+          </li>
+        </ul>
+        <div class="data2">
+          <a href="#" (click)="navigateToProfile($event)">
+            <img class="profileimg" src="../../assets/imgs/profile/proflies.svg" alt="">
+          </a>
+        </div>
+      </div>
+    </div>
+  </nav>
+  
